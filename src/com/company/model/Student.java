@@ -3,6 +3,7 @@ package com.company.model;
 public class Student {
     private String name;
     private String surname;
+    private String address;
 
     public Student() {
     }
