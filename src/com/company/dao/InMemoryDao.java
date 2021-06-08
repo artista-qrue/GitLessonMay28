@@ -30,4 +30,8 @@ public class InMemoryDao {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
     }
+   
+    public void getStrinExample(){
+	Sytem.out.println("Merhaba dunya");
+    }
 }
