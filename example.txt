@@ -1,4 +1,6 @@
-git dersi denemeleri
+git gokhan icin silindi denemeleri
 fetch icin eklendi.
 gökhan uçar
 ikinci gökhan
+
+deneme denem
