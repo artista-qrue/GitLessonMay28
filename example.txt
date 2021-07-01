@@ -1,2 +1,4 @@
 git dersi denemeleri
 fetch icin eklendi.
+
+deneme denem
