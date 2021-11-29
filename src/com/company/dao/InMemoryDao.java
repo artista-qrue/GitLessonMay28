@@ -32,6 +32,6 @@ public class InMemoryDao {
     }
    
     public void getStrinExample(){
-	Sytem.out.println("Merhaba dunya");
+        System.out.println("Git dersleri icin commit atıldı");
     }
 }
