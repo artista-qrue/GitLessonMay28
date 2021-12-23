@@ -31,6 +31,14 @@ public class InMemoryDao {
                 .collect(Collectors.toList());
     }
 
+    //yaşı 15 den büyük olanları getirmesi
+    public List<Student> getStudentListOnAge(){
+        return studentMap.values().stream()
+                .filter(student -> student.getAge() > 15)
+                .collect(Collectors.toList());
+    }
+
+
 
     public List<Student> getNameIsZeynep(){
         return studentMap.values().stream()

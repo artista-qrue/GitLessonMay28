@@ -4,6 +4,7 @@ public class Student {
     private String name;
     private String surname;
     private String address;
+    private int age;
     private String secondryName;
 
     public Student() {
@@ -28,6 +29,22 @@ public class Student {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(final String address) {
+        this.address = address;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(final int age) {
+        this.age = age;
     }
 
     public String getAddress() {
