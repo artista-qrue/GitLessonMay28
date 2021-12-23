@@ -4,7 +4,10 @@ public class Student {
     private String name;
     private String surname;
     private String address;
+
     private int age;
+
+    private String secondryName;
 
     public Student() {
     }
@@ -29,6 +32,14 @@ public class Student {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+    
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(final int age) {
+        this.age = age;
+    }
 
     public String getAddress() {
         return address;
@@ -38,11 +49,11 @@ public class Student {
         this.address = address;
     }
 
-    public int getAge() {
-        return age;
+    public String getSecondryName() {
+        return secondryName;
     }
 
-    public void setAge(final int age) {
-        this.age = age;
+    public void setSecondryName(final String secondryName) {
+        this.secondryName = secondryName;
     }
 }
