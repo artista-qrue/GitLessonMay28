@@ -30,7 +30,13 @@ public class InMemoryDao {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
     }
-   
+
+
+    public List<Student> getNameIsZeynep(){
+        return studentMap.values().stream()
+                .filter(student -> student.getSecondryName().equals("zeynep"))
+                .collect(Collectors.toList());
+    }
     public void getStrinExample(){
         System.out.println("Git dersleri icin commit atıldı ikinci commit ");
     }
