@@ -30,6 +30,14 @@ public class InMemoryDao {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
     }
+
+    //yaşı 15 den büyük olanları getirmesi
+    public List<Student> getStudentListOnAge(){
+        System.out.println("mahmutmahut");
+        return studentMap.values().stream()
+                .filter(student -> student.getAge() > 15)
+                .collect(Collectors.toList());
+    }
    
     public void getStrinExample(){
         System.out.println("Git dersleri icin commit atıldı ikinci commit ");
