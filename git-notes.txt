@@ -1,0 +1,17 @@
+
+
+git add .(degisiklik yapilan dosyanin adi) -->buradaki dosyalar stagging area'ya pushlanır.
+
+git commit -m(parametreler ekleyeblirsiniz Ex : --outher= 'ahmetdellal')  "first commit " --> stagging area'da bulunan dosyaları -> local repository'e setler.
+
+local repository'de ki değişiklikleri remote repository'e puslamam için - > git push origin master/main/kendibranchinizi ekleyebilirsiniz. 
+
+remote reposiyory'de baska bir kişinin yapmış olduğu değişiklikleri görmek için -> git pull origin main/master/kendibranch 
+
+git fetch origin main/master/kendibranchimiz --> bu komut remote reposiyorydeki değişikleri local repository'e kaydeder. eğer bu değişlikleri kendi ortamınızda görmek istiyorsanız .
+git pull or git update yapmamız gerekiyor.
+
+modified edilmiş bir dosya staging area'a eklendiyse ilk once staggin area'dan cıkarmamız gerekiyor bunun için  : git restore --stage example.text/.(Tüm değişiklikleri geri alı)
+git restore example.txt 
+
+
