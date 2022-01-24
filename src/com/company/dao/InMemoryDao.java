@@ -37,7 +37,7 @@ public class InMemoryDao {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
     }
-
+ //deneme
     public List<Student> getAllStudent() {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
