@@ -33,6 +33,12 @@ public class InMemoryDao {
                 .collect(Collectors.toList());
     }
 
+    //isminde last name 'e göre gecenlerin  listesini döndüren method
+    public List<Student> getStudentListByName(String lastName){
+        return studentMap.values().stream()
+                .filter(student -> student.getName().equals(lastName))
+                .collect(Collectors.toList());
+    }
 
     public List<Student> getAllStudent() {
         return studentMap.values().stream()
