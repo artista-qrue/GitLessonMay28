@@ -26,6 +26,14 @@ public class InMemoryDao {
                 .findAny().orElse(null);
     }
 
+    //isminde name gecenlerin  listesini döndüren method
+    public List<Student> getStudentListByName(String name){
+        return studentMap.values().stream()
+                .filter(student -> student.getName().equals(name))
+                .collect(Collectors.toList());
+    }
+
+
     public List<Student> getAllStudent() {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
