@@ -33,6 +33,11 @@ public class InMemoryDao {
                 .collect(Collectors.toList());
     }
 
+    public List<Student> getAllStudent2() {
+        return studentMap.values().stream()
+                .collect(Collectors.toList());
+    }
+
     public List<Student> getAllStudent() {
         return studentMap.values().stream()
                 .collect(Collectors.toList());
