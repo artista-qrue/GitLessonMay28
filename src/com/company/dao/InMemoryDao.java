@@ -20,6 +20,8 @@ public class InMemoryDao {
         studentMap.put(new Date().getTime(), student);
     }
 
+    
+    //pull requesr görüntülenmesi icin eklendi.
     public Student getStudentByName(String name) {
         return studentMap.values().stream()
                 .filter(student -> student.getName().equals(name))
