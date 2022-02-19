@@ -60,7 +60,7 @@ public class InMemoryDao {
                 .collect(Collectors.toList());
     }
 
-  //seamlat
+  //seamlar conflict varrr
 
     public List<Student> getNameIsZeynep(){
         return studentMap.values().stream()
