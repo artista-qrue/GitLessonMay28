@@ -28,12 +28,14 @@ public class InMemoryDao {
                 .findAny().orElse(null);
     }
 
-    //isminde name gecenlerin  listesini döndüren method
-    public List<Student> getStudentListByName(String name){
+    //pull requesr görüntülenmesi icin eklendi.
+    public Student getStudentByName2(String name) {
         return studentMap.values().stream()
                 .filter(student -> student.getName().equals(name))
-                .collect(Collectors.toList());
+                .findAny().orElse(null);
     }
+
+
 
     public List<Student> getAllStudent2() {
         return studentMap.values().stream()
@@ -65,7 +67,5 @@ public class InMemoryDao {
                 .filter(student -> student.getSecondryName().equals("zeynep"))
                 .collect(Collectors.toList());
     }
-    public void getStrinExample(){
-        System.out.println("Git dersleri icin commit atıldı ikinci commit ");
-    }
+
 }
